@@ -1,0 +1,152 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: #0d1b2a; /* Deep Navy background */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #e0e1dd; /* Soft off-white for text */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  color: #ffd700; /* Gold for headings */
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+/* Header */
+header {
+  background-color: #0d1b2a; /* Deep navy for header */
+  color: #e0e1dd;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #e0e1dd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Gold hover effect */
+}
+
+/* Footer */
+footer {
+  background-color: #112d4e; /* A subtle lighter navy */
+  color: #e0e1dd;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffd700; /* Gold links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #cc6699; /* Soft pink on hover */
+}
+
+/* Product Card */
+.product-card {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fefefe; /* White background for products */
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.button {
+  background-color: #cc6699;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* Extra-rounded buttons for elegance */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .product-list {
+    flex-direction: column;
+  }
+}
